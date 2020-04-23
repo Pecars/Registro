@@ -1,0 +1,226 @@
+pragma solidity >=0.4.22 <0.7.0;
+
+contract RegistroMascota {
+    
+        uint256 id; 
+        string nombreMascota;
+        string especie;
+        uint256 microchip;
+        string sexo; 
+//        float peso; 
+        string raza; 
+        string color; 
+        uint256 fechaNacimiento;
+        string lugarNacimiento; 
+        string veterinario; 
+        string personalidad;
+        string infoAdicional; 
+        
+
+    function setNombreMascota (string memory _nombreMascota) public{
+        
+        nombreMascota = _nombreMascota;
+
+    }
+  
+    function setEspecie (string memory _especie) public{
+        
+        especie = _especie;
+        
+    }
+    
+    function setMicrochip (uint256 _microchip) public{
+        
+        microchip = _microchip;
+
+    }
+    
+    function setSexo (string memory _sexo) public{
+        
+        sexo = _sexo;
+
+    }
+    
+    function setRaza (string memory _raza) public{
+        
+        raza = _raza;
+
+    }
+    
+    function setColor (string memory _color) public{
+        
+        color = _color;
+
+    }
+    
+    function setFechaNacimiento (uint256  _fechaNacimiento) public{
+        
+        fechaNacimiento = _fechaNacimiento;
+
+    }
+    
+    function setLugarNacimiento (string memory _lugarNacimiento) public{
+        
+        lugarNacimiento = _lugarNacimiento;
+
+    }
+    
+    function setVeterinario (string memory _veterinario) public{
+        
+        veterinario = _veterinario;
+
+    }
+    
+    function setPersonalidad (string memory _personalidad) public{
+        
+        personalidad = _personalidad;
+
+    }
+    
+    function setInfoAdicional (string memory _infoAdicional) public{
+        
+        infoAdicional = _infoAdicional;
+
+    }
+    
+    function getNombreMascota() public view returns (string memory){
+        
+     return nombreMascota;
+
+    }
+    
+    function getEspecie() public view returns (string memory){
+        
+    return especie;
+
+    }
+    
+    function getMicrochip() public view returns (uint256){
+        
+    return microchip;
+
+    }
+    
+    function getSexo() public view returns (string memory){
+        
+    return sexo;
+
+    }
+    
+    function getRaza() public view returns (string memory){
+        
+    return raza;
+
+    }
+    
+    function getColor() public view returns (string memory){
+        
+    return color;
+
+    }
+    
+    function getFechaNacimiento() public view returns (uint256){
+        
+    return fechaNacimiento;
+
+    }
+    
+    function getLugarNacimiento() public view returns (string memory){
+        
+    return lugarNacimiento;
+
+    }
+    
+    function getVeterinario() public view returns (string memory){
+        
+    return veterinario;
+
+    }
+    
+    function getPersonalidad() public view returns (string memory){
+        
+    return personalidad;
+
+    }
+    
+    function getInfoAdicional() public view returns (string memory){
+        
+    return infoAdicional;
+
+    }
+    
+}
+
+contract ConsultaDatos{
+    
+    RegistroMascota llamaRegistro = new RegistroMascota();
+    
+    function getNombreMascota_() public view returns (string memory){
+        
+     return llamaRegistro.getNombreMascota();
+
+    }
+    
+    function getEspecie_() public view returns (string memory){
+        
+     return llamaRegistro.getEspecie();
+
+    }
+    
+    function getMicrochip_() public view returns (uint256){
+        
+     return llamaRegistro.getMicrochip();
+
+    }
+    
+    function getSexo_() public view returns (string memory){
+        
+     return llamaRegistro.getSexo();
+
+    }
+    
+    function getRaza_() public view returns (string memory){
+        
+     return llamaRegistro.getRaza();
+
+    }
+    
+    function getColor_() public view returns (string memory){
+        
+     return llamaRegistro.getColor();
+
+    }
+    
+    function getFechaNacimiento_() public view returns (uint256){
+        
+     return llamaRegistro.getFechaNacimiento();
+
+    }
+    
+    function getLugarNacimiento_() public view returns (string memory){
+        
+     return llamaRegistro.getLugarNacimiento();
+
+    }
+    
+    function getVeterinario_() public view returns (string memory){
+        
+     return llamaRegistro.getVeterinario();
+
+    }
+    
+    function getPersonalidad_() public view returns (string memory){
+        
+     return llamaRegistro.getPersonalidad();
+
+    }
+    
+    function getInfoAdicional_() public view returns (string memory){
+        
+     return llamaRegistro.getInfoAdicional();
+
+    }
+    
+    
+    
+}
